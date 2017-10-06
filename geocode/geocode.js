@@ -16,7 +16,6 @@ var geocodeAddress = (address, callback) => {
               longitude: body.results[0].geometry.location.lng
             });
         }
-       
     });
 };
 
