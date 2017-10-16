@@ -4,7 +4,7 @@ const weather = require('./weather/weather');
 const argv = yargs
     .options({
         a : {
-            demnad: true,
+            demand: true,
             alias: 'address',
             description: 'Address to fetch weather for',
             string: true
