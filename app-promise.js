@@ -30,7 +30,12 @@ axios.get(geocodeURL).then((response) => {
 }).then((response) => {
     var temperature = response.data.currently.temperature;
     var apparentTemperature = response.data.currently.apparentTemperature;
+    var temperatureMax = Math.ceil(response.data.daily.data[0].temperatureMax);
+    var temperatureMin = Math.ceil(response.data.daily.data[0].temperatureMin);
+    var chanceOfPercip = Math.ceil(response.data.daily.data[0].precipProbability);
     console.log(`It is currently ${temperature}. It feels like ${apparentTemperature}`);
+    console.log(`The high for today is ${temperatureMax}\nThe low for today is ${temperatureMin}`);
+    console.log(`${chanceOfPercip}% chance of rain`);
 }).catch((e) => {
     if (e.code === 'ENOTFOUND' || e.code === 'ETIMEOUT') {
         console.log('Unable to connect to API servers');
