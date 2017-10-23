@@ -20,6 +20,3 @@ Fetching weather is very simple. Just run app-promise.js -a Address. Address can
 node app-promise.js - a '1401 John F Kennedy Blvd, Philadelphia, PA 19102'
 node app-promise.js -a 19102
 ```
-
-End with an example of getting some data out of the system or using it for a little demo
-
