@@ -17,6 +17,6 @@ npm install
 Fetching weather is very simple. Just run app-promise.js -a Address. Address can be a full address or a zip code.
 
 ```
-node app-promise.js - a '1401 John F Kennedy Blvd, Philadelphia, PA 19102'
+node app-promise.js -a '1401 John F Kennedy Blvd, Philadelphia, PA 19102'
 node app-promise.js -a 19102
 ```
